@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bill Receipt</title>
+    <style>
+        /* Center the table */
+        table {
+            margin: 0 auto;
+        }
+
+        /* Add border to the table */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        /* Style for table headers */
+        th {
+            background-color: #f2f2f2; /* Light gray background */
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Style for table cells */
+        td {
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bill Receipt</h1>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in csv_content %}
+                <tr>
+                    <td>{{ row.name }}</td>
+                    <td>{{ row.quantity }}</td>
+                    <td>{{ row.price }}</td>
+                    <td>{{ row.weight }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <p>Total Amount: Rs:{{ total_amount }}</p>
+
+    <p>Scan the Google Pay QR code to make a payment:</p>
+    <img src="{{ url_for('static', filename='qr_code.png') }}" alt="Google Pay QR Code" style="width: auto; height: 300px;">
+
+</body>
+</html>

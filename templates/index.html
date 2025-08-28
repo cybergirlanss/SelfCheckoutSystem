@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Barcode Scanner</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Barcode Scanner</h1>
+        <p>Click the button below to start scanning:</p>
+        <form action="/start_scanning" method="POST">
+            <button type="submit" class="btn">Start Scanning</button>
+        </form>
+    </div>
+</body>
+</html>

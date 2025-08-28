@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Continue Scanning</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Continue Scanning</h1>
+        <p>Scanning in progress...</p>
+        <p><strong>Scanned Item:</strong> {{ scanned_item.name }} (Quantity: {{ scanned_item.quantity }}, Price: {{ scanned_item.price }})</p>
+        <form action="/continue_scanning" method="POST">
+            <label for="choice">Do you want to continue?</label>
+            <select name="choice" id="choice">
+                <option value="y">Yes</option>
+                <option value="n">No</option>
+            </select>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
