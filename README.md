@@ -30,9 +30,9 @@ This application simulates a real-world self-checkout experience by using a webc
 ## 📦 Installation
 
 ### Prerequisites
-- Python **3.7+**
+- Python 3.7+
 - MongoDB Atlas account or local MongoDB instance
-- A working webcam
+- Webcam connected to your computer
 
 ### Setup Instructions
 
@@ -40,11 +40,16 @@ This application simulates a real-world self-checkout experience by using a webc
    ```bash
    git clone https://github.com/cybergirlanss/SelfCheckoutSystem.git
    cd SelfCheckoutSystem
-2. **Create a virtual environment**
+   ```
+
+2. **Create a virtual environment** (recommended)
    ```bash
-  python -m venv venv
-  source venv/bin/activate   # On Windows: venv\Scripts\activate
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
 3. **Install dependencies**
- ```bash
-  pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
 
