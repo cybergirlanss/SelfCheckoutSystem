@@ -52,4 +52,14 @@ This application simulates a real-world self-checkout experience by using a webc
    ```bash
    pip install -r requirements.txt
    ```
+4. **Configure MongoDB**
+   - Obtain your MongoDB connection string from [MongoDB Atlas](https://www.mongodb.com/atlas) or your local MongoDB instance
+   - Update the connection details in the configuration file (`app.py` or config file)
 
+5. **Run the application**
+   ```bash
+   python app.py
+   ```
+
+6. **Access the application**
+   Open your web browser and navigate to `http://127.0.0.1:5000`
