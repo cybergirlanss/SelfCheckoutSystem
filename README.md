@@ -1,4 +1,4 @@
-# 🛒 Self-Checkout System
+# Self-Checkout System
 
 A comprehensive self-checkout kiosk software built with **Python**.  
 This application simulates a real-world self-checkout experience by using a webcam to scan item barcodes, managing an inventory with **MongoDB**, generating a real-time bill, and facilitating payments through **UPI QR codes**.
