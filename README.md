@@ -63,3 +63,21 @@ This application simulates a real-world self-checkout experience by using a webc
 
 6. **Access the application**
    Open your web browser and navigate to `http://127.0.0.1:5000`
+## 💡 How to Use
+
+1. **Start Scanning**: Point item barcodes at your webcam. The application will detect and highlight barcodes in real-time.
+2. **View Bill**: Successfully scanned items automatically appear in your digital cart with updated totals.
+3. **Checkout**: Click "Proceed to Pay" when finished scanning.
+4. **UPI Payment**: Scan the generated QR code with any UPI-enabled app to complete payment.
+5. **Save Receipt**: Download your bill as a CSV file for records.
+
+## 📁 Project Structure
+
+```
+SelfCheckoutSystem/
+├── app.py                 # Main application file
+├── requirements.txt       # Project dependencies
+├── templates/            # HTML templates
+├── static/              # CSS, JavaScript, assets
+└── README.md            # Project documentation
+```
